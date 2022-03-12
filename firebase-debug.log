@@ -1,0 +1,47 @@
+[debug] [2022-03-10T17:35:44.468Z] ----------------------------------------------------------------------
+[debug] [2022-03-10T17:35:44.471Z] Command:       /usr/local/bin/firebase /Users/Macbook/.cache/firebase/tools/lib/node_modules/firebase-tools/lib/bin/firebase init
+[debug] [2022-03-10T17:35:44.471Z] CLI Version:   9.18.0
+[debug] [2022-03-10T17:35:44.472Z] Platform:      darwin
+[debug] [2022-03-10T17:35:44.472Z] Node Version:  v12.18.1
+[debug] [2022-03-10T17:35:44.473Z] Time:          Thu Mar 10 2022 23:05:44 GMT+0530 (India Standard Time)
+[debug] [2022-03-10T17:35:44.473Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-03-10T17:35:44.545Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-03-10T17:35:44.546Z] > authorizing via signed-in user (kenmerksoftwares@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  /Users/Macbook
+
+Before we get started, keep in mind:
+
+  * You are initializing within an existing Firebase project directory
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[info] i  .firebaserc already has a default project, using kenmerksoftwares-7a0d6. 
+[debug] [2022-03-10T17:35:55.914Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/kenmerksoftwares-7a0d6 [none]
+[debug] [2022-03-10T17:35:56.438Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/kenmerksoftwares-7a0d6 403
+[debug] [2022-03-10T17:35:56.439Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/kenmerksoftwares-7a0d6 {"error":{"code":403,"message":"The caller does not have permission","status":"PERMISSION_DENIED"}}
+[debug] [2022-03-10T17:35:56.439Z] HTTP Error: 403, The caller does not have permission
+[debug] [2022-03-10T17:35:56.893Z] FirebaseError: HTTP Error: 403, The caller does not have permission
+    at module.exports (/Users/Macbook/.cache/firebase/tools/lib/node_modules/firebase-tools/lib/responseToError.js:38:12)
+    at Client.doRequest (/Users/Macbook/.cache/firebase/tools/lib/node_modules/firebase-tools/lib/apiv2.js:238:23)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+    at async Client.request (/Users/Macbook/.cache/firebase/tools/lib/node_modules/firebase-tools/lib/apiv2.js:96:20)
+    at async Object.getFirebaseProject (/Users/Macbook/.cache/firebase/tools/lib/node_modules/firebase-tools/lib/management/projects.js:290:21)
+    at async Object.doSetup [as project] (/Users/Macbook/.cache/firebase/tools/lib/node_modules/firebase-tools/lib/init/features/project.js:77:27)
+    at async init (/Users/Macbook/.cache/firebase/tools/lib/node_modules/firebase-tools/lib/init/index.js:19:9)
+[error] 
+[error] Error: Failed to get Firebase project kenmerksoftwares-7a0d6. Please make sure the project exists and your account has permission to access it.
